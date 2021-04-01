@@ -114,23 +114,29 @@ var javasTurn = () => {
 
 // a function that resets the board back to normal
 var reset = () => {
+ for (var z = 0; z < 3; z++) {
 
-    board[0][0].innerHTML = ""
-    board[0][1].innerHTML = ""
-    board[0][2].innerHTML = ""
-    board[1][0].innerHTML = ""
-    board[1][1].innerHTML = ""
-    board[1][2].innerHTML = ""
-    board[2][0].innerHTML = ""
-    board[2][1].innerHTML = ""
-    board[2][2].innerHTML = ""
-    board[0][0].className = 'board-slot'
-    board[0][1].className = 'board-slot'
-    board[0][2].className = 'board-slot'
-    board[1][0].className = 'board-slot'
-    board[1][1].className = 'board-slot'
-    board[1][2].className = 'board-slot'
-    board[2][0].className = 'board-slot'
-    board[2][1].className = 'board-slot'
-    board[2][2].className = 'board-slot'
+        for (var y = 0; y < 3; y++) {
+            board[z][y].innerHTML = ""
+            board[z][y].className = 'board-slot'
+            // board[0][0].innerHTML = ""
+            // board[0][1].innerHTML = ""
+            // board[0][2].innerHTML = ""
+            // board[1][0].innerHTML = ""
+            // board[1][1].innerHTML = ""
+            // board[1][2].innerHTML = ""
+            // board[2][0].innerHTML = ""
+            // board[2][1].innerHTML = ""
+            // board[2][2].innerHTML = ""
+            // board[0][0].className = 'board-slot'
+            // board[0][1].className = 'board-slot'
+            // board[0][2].className = 'board-slot'
+            // board[1][0].className = 'board-slot'
+            // board[1][1].className = 'board-slot'
+            // board[1][2].className = 'board-slot'
+            // board[2][0].className = 'board-slot'
+            // board[2][1].className = 'board-slot'
+            // board[2][2].className = 'board-slot'
+        }
+    }
 }
